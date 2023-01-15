@@ -4,6 +4,10 @@ allow platform_app oem_service:service_manager find;
 
 allow platform_app vendor_camera_data_file:dir getattr;
 
+allow platform_app vendor_hal_orms_hwservice:hwservice_manager find;
+
+allow platform_app vendor_persist_camera_file:dir search;
+
 allow platform_app vendor_sysfs_kgsl:file r_file_perms;
 
 allow platform_app vendor_xdsp_device:chr_file r_file_perms;
