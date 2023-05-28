@@ -1,5 +1,7 @@
 typeattribute platform_app hal_camera_client;
 
+allow platform_app hal_power_service:service_manager { find };
+
 allow platform_app oem_service:service_manager find;
 
 allow platform_app vendor_camera_data_file:dir getattr;
